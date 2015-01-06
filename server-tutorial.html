@@ -47,11 +47,11 @@
           var users = [];
         </pre>
 
-        3. Event listeners are added to the server in order to define how it
+        3. Event handlers are added to the server in order to define how it
         handles connections and messages.
 
         <pre class="prettyprint">
-            // the .on method adds the event listener , connection is the type of even being listened for.
+            // the .on method adds the event handler , connection is the type of even being listened for.
           chatServer.on("connection" , function(ws){
             console.log("connection");
             users.push(ws);
