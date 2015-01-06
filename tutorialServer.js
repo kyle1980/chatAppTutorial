@@ -36,6 +36,7 @@
 
 
 var WebSocket = require("ws").Server;
+// Note that the Server method is necessary when requiring ws for the purpose of creating a server.
 var chatServ = new WebSocket({port:3000});
 var users = [];
 
